@@ -6,4 +6,5 @@ $pdo = new PDO($dsn, $username, $password);
 // if($pdo){
 //     echo "Connexion succes";
 // }
+
 ?>
