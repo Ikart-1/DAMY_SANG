@@ -1,0 +1,245 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #444444;
+  }
+.form-control {
+	height: 40px;
+	box-shadow: none;
+}
+.message{
+	position: fixed;
+	background-color: var(--bg1-color);
+	top: 0;
+	left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+	height: max-content;
+    text-align: center;
+    z-index: 9999;
+	border-radius: 5px;
+	padding: 5px 10px ;
+}
+.icon-user{
+	font-size: 10rem;
+	text-align: center;
+	color: var(--bg1-color);
+}
+.message i {
+	/* color: var(--font2-color); */
+	color: #fff;
+	font-size: 2rem;
+	padding-bottom: 5px;
+}
+.message p{
+	/* color: var(--font2-color); */
+	color: #fff;
+} 
+.message {
+	animation: fadeOut 3s forwards;
+  }
+  
+  @keyframes fadeOut {
+	0% {
+	  opacity: 1;
+	}
+    90%{
+        opacity: 1;
+    }
+	100% {
+	  opacity: 0;
+	  display: none;
+	}
+  }
+.form-control, .btn {        
+	border-radius: 3px;
+}
+.signup-form {
+	box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+	width: 650px;
+	margin: 0 auto;
+	padding: 5px 0;
+  	font-size: 15px;
+	background-color: var(--font1-color);
+}
+.signup-form input:focus{
+	outline: none;
+	border-color: var(--bg1-color);
+	box-shadow: none;
+}
+.signup-form select:focus{
+	outline: none;
+	border-color: var(--bg1-color);
+	box-shadow: none;
+}
+.signup-form h2 {
+	color: var(--bg1-color);
+	margin: 0 0 15px;
+	font-weight: 600;
+	position: relative;
+	text-align: center;
+}
+.signup-form h2:before, .signup-form h2:after {
+	content: "";
+	height: 2px;
+	width: 30%;
+	background: #d4d4d4;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+}	
+.signup-form h2:before {
+	left: 0;
+}
+.signup-form h2:after {
+	right: 0;
+}
+.signup-form .hint-text {
+	color: #444444;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.signup-form form {
+	color: var(--font-black-color);
+	border-radius: 3px;
+	background: var(--font-white-color);
+	/* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
+	padding: 30px;
+}
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form .btn {        
+	font-size: 16px;
+	font-weight: bold;		
+	min-width: 140px;
+	outline: none !important;
+	/* margin-bottom: 15px; */
+}
+.signup-form .row div:first-child {
+	padding-right: 10px;
+}
+   	
+
+.signup-form a:hover {
+	text-decoration: none;
+    color:  var(--bg2-color);
+}
+.signup-form  a {
+	color: var(--bg1-color);
+	text-decoration: underline;
+}
+	
+.select-btn , .options li{
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+}
+.select-btn{
+	height: 65px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	border-radius: 7px;
+	background-color: var(--font1-color);
+}
+
+.signup-form  .label{
+	margin-right: 10px;
+}
+
+/*select css search by ilyas ( js) start*/
+/* .wrapper.active .select-btn i{
+	transform: rotate(-180deg);
+	transition: transform 0.3s linear;
+}
+.content{
+	display: none;
+	padding: 20px;
+	margin-top: 15px;
+	border-radius: 7px;
+}
+.wrapper.active .content{
+	display: block;
+
+}
+.content .options{
+	margin-top: 10px;
+	max-height: 100px;
+	overflow-y: auto;
+	padding-right: 7px;
+}
+.options::-webkit-scrollbar{
+	width: 7px;
+}
+.options::-webkit-scrollbar-track{
+	background-color: #f1f1f1;
+	border-bottom: 25px;
+}
+.options::-webkit-scrollbar-thumb{
+	background-color: #ccc;
+	border-bottom: 25px;
+}
+.options li{
+	height: 50px;
+	padding: 0 13px;
+	border-radius: 5px;
+}
+.options li:hover , li.selected{
+	background-color: #f2f2f2;
+} */
+
+/*select css search by ilyas ( js) end*/
+.btn,
+.btn:focus {
+  background: var(--bg1-color);
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.btn:hover,
+.btn:focus:hover {
+  color: #fff;
+  background: var(--bg2-color);
+}
+i{
+	color: var(--font-black-color);
+	
+}
+.input-group-text{
+	background-color: transparent;
+	border: none;
+}
+.input-group-text{
+	position: absolute;
+	right: 0;
+	top: 15%;
+}
+.search .btn{
+	border-radius: 2px !important;
+	background-color: transparent;
+	color: #444444;
+	font-weight:400;
+	border:var(--bs-border-width) solid var(--bs-border-color);;
+	
+}
+.search .btn:focus{
+	background-color: transparent;
+	color: #444444;
+	border: 1px solid var(--bg1-color);
+	box-shadow: none;
+
+} 
+.search .dropdown-item.active, .dropdown-item:active {
+	color: #FFFF;
+	text-decoration: none;
+	background-color: var(--bg1-color);
+  }
+  .search .bootstrap-select > .dropdown-toggle {
+	width: 85%;
+  }
+  
+   .search .bootstrap-select .dropdown-toggle:focus, .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+	outline: none!important;
+  }
